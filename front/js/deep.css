@@ -1,0 +1,150 @@
+:root {
+    --deep-border-radius: 6px;
+    --deep-border-color: #31323C;
+    --deep-border: 1px solid #31323C; 
+    --deep-border-tab: 1px solid #383A45;
+    --deep-border-top-tab-active: #d3475c;
+    --deep-bg-color-tab-out-focus: #191A21;
+    --deep-bg-color: #21222C;
+    --deep-bg-color-inside: #282A36;
+    --deep-bg-color-footer: #191A21;
+    --deep-color-1: #6272A4;
+}
+.deep {
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 44px calc(100vh - (44px + 24px + (5px + 5px))) 24px;
+    grid-template-columns: 44px 265px calc(100vw - (44px + 265px + (5px + 5px + 5px)));
+    grid-template-areas: "deep-header  deep-header    deep-header"
+                         "deep-aside   deep-expector  deep-main"
+                         "deep-footer  deep-footer    deep-footer";
+    overflow: hidden;
+    background: var(--deep-bg-color);
+}
+.deep-header {
+    grid-area: deep-header;
+}
+.deep-aside {
+    grid-area: deep-aside;
+    display: flex;
+    flex-direction: column;
+}
+.deep-aside button {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.deep-expector {
+    grid-area: deep-expector;
+    border-radius: var(--deep-border-radius);
+    border: var(--deep-border);
+    overflow-x: auto;
+}
+.deep-expector li {
+    white-space:nowrap;
+}
+.deep-main {
+    grid-area: deep-main;
+    background-color: var(--deep-bg-color-inside);
+    border-radius: var(--deep-border-radius);
+    border: var(--deep-border);
+}
+.deep-footer {
+    grid-area: deep-footer;
+    background-color: var(--deep-bg-color-footer);
+}
+.deep-tabs {
+    display: flex;
+    height: 36px;
+    width: 100%;
+}
+.deep-bradcrumbs {
+    display: flex;
+    height: 38px;
+    width: 100%;
+    color: var(--deep-color-1);
+    font-size: .8rem;
+    padding-left: 10px;
+}
+.deep-bradcrumbs span {
+    flex: 1;
+    align-self: center;
+}
+.deep-editors {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.deep-txt {
+    color: var(--deep-color-1);
+    font-size: .8rem;
+}
+.deep-list{
+    list-style: none;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: transparent;
+    border: var(--deep-border-tab);
+    border-top: 1px solid var(--deep-border-top-tab-active);
+}
+.nav-link {
+    margin: 5px;
+    padding: 0.25rem 0.7rem;
+    font-weight: 500;
+    color: var(--deep-color-1);
+    background-color: var(--deep-bg-color);
+    border: 1px solid var(--deep-bg-color);
+}
+.bi-javascript {
+    color: yellow;
+}
+.bi-css {
+    color: blueviolet;
+}
+.btn-deep-aside {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--deep-color-1);
+}
+.btn-deep-aside:active,
+.btn-deep-aside:focus {
+    background-color: #39394C;
+    border: 1px solid #39394C;
+}
+.btn-deep-aside:hover {
+    background-color: #39394C;
+    border: 1px solid #39394C;
+}
+.navbar {
+    padding: 0 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(233, 233, 233);
+    border-radius: 20px; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #c7c8ca;
+    border-radius: 20px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(185, 185, 185); 
+}
+
+.monaco-editor {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.tab-pane{
+    width: calc(100vw - 330px) !important;
+    height: calc(100vh - 160px) !important;
+}
