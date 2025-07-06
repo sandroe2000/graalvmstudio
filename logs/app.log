@@ -361,3 +361,163 @@
 2025-07-06 14:32:01.923 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
 2025-07-06 14:32:03.576 [INFO ] [qtp521081105-109] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/wysiwyg/properties/Col.js
 2025-07-06 14:32:08.653 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Col
+2025-07-06 19:00:03.187 [INFO ] [main] org.eclipse.jetty.server.Server - jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.1+9-jvmci-b01
+2025-07-06 19:00:03.241 [INFO ] [main] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-07-06 19:00:03.621 [INFO ] [main] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1968a49c{/,null,AVAILABLE}
+2025-07-06 19:00:03.625 [INFO ] [main] o.e.jetty.server.AbstractConnector - Started ServerConnector@62150f9e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-07-06 19:00:03.633 [INFO ] [main] org.eclipse.jetty.server.Server - Started Server@34f5090e{STARTING}[11.0.25,sto=0] @1033ms
+2025-07-06 19:01:42.041 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:01:42.408 [INFO ] [qtp521081105-32] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:01:42.447 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:02:22.431 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/database/DatabaseController.js
+2025-07-06 19:02:37.393 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/FormFiles.js
+2025-07-06 19:03:06.137 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:04:41.394 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: StudioController
+2025-07-06 19:05:14.592 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: StudioController
+2025-07-06 19:05:41.702 [INFO ] [qtp521081105-32] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: StudioController
+2025-07-06 19:06:08.341 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:06:08.364 [INFO ] [qtp521081105-32] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:06:08.380 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:06:10.254 [INFO ] [qtp521081105-32] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/database/DatabaseController.js
+2025-07-06 19:06:10.268 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:06:13.186 [INFO ] [qtp521081105-32] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/RestClient.js
+2025-07-06 19:06:18.332 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/wysiwyg/properties/Container.js
+2025-07-06 19:07:14.132 [INFO ] [main] org.eclipse.jetty.server.Server - jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.1+9-jvmci-b01
+2025-07-06 19:07:14.188 [INFO ] [main] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-07-06 19:07:14.529 [INFO ] [main] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1968a49c{/,null,AVAILABLE}
+2025-07-06 19:07:14.534 [INFO ] [main] o.e.jetty.server.AbstractConnector - Started ServerConnector@62150f9e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-07-06 19:07:14.540 [INFO ] [main] org.eclipse.jetty.server.Server - Started Server@34f5090e{STARTING}[11.0.25,sto=0] @888ms
+2025-07-06 19:12:52.053 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/consumers.html
+2025-07-06 19:13:02.244 [INFO ] [qtp521081105-31] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:13:02.291 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:13:02.316 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:14:05.625 [INFO ] [qtp521081105-31] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:14:36.727 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/database/DatabaseController.js
+2025-07-06 19:14:56.595 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: StudioController
+2025-07-06 19:15:09.085 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:15:09.135 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:15:09.192 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:15:28.778 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:15:32.610 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Search.js
+2025-07-06 19:15:45.227 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Home.js
+2025-07-06 19:15:48.535 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/FormFiles.js
+2025-07-06 19:18:05.739 [INFO ] [qtp521081105-31] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/FormFiles.js
+2025-07-06 19:18:24.561 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para criar um novo script: Gemini
+2025-07-06 19:18:31.591 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:18:31.614 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:18:31.626 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:18:33.640 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/FormFiles.js
+2025-07-06 19:18:47.238 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para criar um novo script: Gemini
+2025-07-06 19:19:18.406 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:19:33.561 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/FormFiles.js
+2025-07-06 19:19:46.023 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: FormFiles
+2025-07-06 19:19:49.225 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:19:49.263 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:19:49.291 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:20:02.598 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:20:05.822 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/FormFiles.js
+2025-07-06 19:20:20.436 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para criar um novo script: Gemini
+2025-07-06 19:20:20.445 [INFO ] [qtp521081105-55] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:20:20.457 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:20:29.998 [INFO ] [qtp521081105-55] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Gemini.js
+2025-07-06 19:21:09.411 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:21:22.256 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:22:36.353 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:23:17.668 [INFO ] [qtp521081105-55] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:23:46.205 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:24:45.478 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:25:26.989 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:25:45.792 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Home.js
+2025-07-06 19:25:47.920 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:27:04.807 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Layout
+2025-07-06 19:27:46.611 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Layout
+2025-07-06 19:27:49.215 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:27:51.106 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:27:53.972 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:28:51.667 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:29:05.473 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:29:05.492 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:29:05.508 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:29:11.082 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Gemini.js
+2025-07-06 19:29:16.158 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:29:18.626 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:29:30.255 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:29:32.264 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:30:28.709 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:30:28.894 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:30:29.064 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:30:31.056 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:31:14.057 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Home.js
+2025-07-06 19:31:23.272 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:32:00.029 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:32:00.269 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:32:00.417 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:32:03.039 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:34:59.287 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:35:08.900 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:35:11.335 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:35:20.052 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:35:29.351 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:36:58.575 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:37:02.246 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:37:51.371 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:37:51.391 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:37:51.407 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:37:56.948 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:39:24.840 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:39:35.986 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:39:39.057 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:39:58.188 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:40:17.349 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:40:24.667 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:40:46.116 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:41:10.304 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:41:14.474 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:41:23.508 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:43:45.844 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:43:49.426 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:43:50.598 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:44:13.153 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:44:23.551 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:44:25.272 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:44:36.101 [INFO ] [qtp521081105-57] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:44:37.685 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:45:42.096 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:45:42.119 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:45:42.139 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:45:45.623 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:45:57.258 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:45:58.788 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:46:03.372 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 19:46:03.391 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 19:46:03.405 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 19:46:11.352 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:46:19.646 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:46:25.925 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:46:27.332 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:46:33.339 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:46:34.825 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:47:00.161 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:47:04.179 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:47:05.247 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:55:25.493 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:55:49.847 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:55:59.430 [INFO ] [qtp521081105-52] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:56:00.622 [INFO ] [qtp521081105-34] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:57:57.643 [INFO ] [qtp521081105-30] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 19:58:07.983 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 19:58:09.564 [INFO ] [qtp521081105-29] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 19:58:11.131 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 20:09:14.206 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: Gemini
+2025-07-06 20:09:16.798 [INFO ] [qtp521081105-35] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Layout.js
+2025-07-06 20:09:18.321 [INFO ] [qtp521081105-36] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /crmp6/frontend/Gemini.js
+2025-07-06 20:21:16.626 [WARN ] [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Failed to validate connection org.postgresql.jdbc.PgConnection@74585b49 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-06 20:21:21.250 [WARN ] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@61535748 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-06 20:21:38.829 [WARN ] [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Failed to validate connection org.postgresql.jdbc.PgConnection@2807e518 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-06 20:21:48.547 [WARN ] [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Failed to validate connection org.postgresql.jdbc.PgConnection@61edba45 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-06 20:21:54.145 [WARN ] [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Failed to validate connection org.postgresql.jdbc.PgConnection@1dcec83b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-06 20:21:55.951 [WARN ] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@74f76ddc (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-06 20:21:57.744 [WARN ] [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Failed to validate connection org.postgresql.jdbc.PgConnection@7691785f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-06 20:22:05.582 [WARN ] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@14eeb0dc (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-06 20:22:08.861 [WARN ] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@64d7bede (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-06 20:22:33.153 [WARN ] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@55e9ac8 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.

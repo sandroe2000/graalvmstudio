@@ -16,7 +16,6 @@ public class MetricsRegistry {
         registry.config().commonTags("application", "base-app");
 
         new JvmMemoryMetrics().bindTo(registry);
-
     }
 
     private MetricsRegistry() {}
