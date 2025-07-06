@@ -1,0 +1,240 @@
+div#rest-grid {
+    display: grid;
+    gap: 1px;
+    background-color: #e2e5ed;
+    grid-template-rows: 54px calc(100vh - 115px);
+    grid-template-columns: 279px calc(100vw - (54px + 279px + 8px));
+    grid-template-areas:
+        "search header"
+        "section main";
+    overflow: hidden;
+}
+
+section {
+    grid-area: section;
+    /*background-color: #ffffff;*/
+}
+
+.link-action {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+search {
+    grid-area: search;
+    /*background-color: #ffffff;*/
+    padding-left: 7px;
+}
+
+header {
+    grid-area: header;
+    /*background-color: #ffffff;*/
+    padding-left: 7px;
+}
+
+main {
+    grid-area: main;
+    background-color: #f8f9fc;
+    /*overflow-y: auto;*/
+}
+
+search button.btn-outline-light,
+header button.btn-outline-light {
+    position: relative;
+    --bs-btn-color: #001737;
+    --bs-btn-border-color: #e2e5ed;
+    margin-top: 8px;
+}
+
+.btn span {
+    font-size: 0.875rem;
+}
+
+.w-icons .dropdown-item {
+    padding: var(--bs-dropdown-item-padding-y) 35px;
+}
+
+.restSearchBox {
+    position: relative;
+}
+
+.restSearchBox i {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+}
+
+#btnSearchRest {
+    padding-left: 30px;
+    /*width: 158px;*/
+    height: 38px;
+}
+
+article h6 {
+    padding: 8px 15px 0px 15px;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+article .nav {
+    --bs-nav-link-padding-y: 0.75rem;
+}
+
+div#mainCode {
+    position: relative;
+    height: calc(100vh - 125px);
+    padding: 0px;
+    margin: 0px;
+    --dot-bg: #f8f9fc;
+    --dot-color: #D2D2D2;
+    --dot-size: 1px;
+    --dot-space: 20px;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+}
+
+#restTop {
+    background-color: #FFF;
+    border-bottom: 1px solid #e2e5ed;
+}
+
+.table-card {
+    position: absolute;
+    min-width: 260px;
+    max-width: 360px;
+}
+
+.horiz-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.on-active {
+    border: 1px dashed orange !important;
+    background-color: #fff;
+}
+
+div#restNavTabContent {
+    height: calc(100vh - 125px);
+}
+
+#floatSectionMenu {
+    position: absolute;
+    bottom: 12px;
+    left: 60px;
+    z-index: 1054;
+}
+
+div#floatSectionMenu button.btn {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    background-color: #e2e5ed50;
+}
+
+div#floatSectionMenu button.btn:hover {
+    background-color: #e2e5ed;
+}
+
+#floatArticleMenu {
+    position: absolute;
+    bottom: 12px;
+    right: 0px;
+    /*z-index: 1054;*/
+}
+
+div#floatArticleMenu button.btn {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    background-color: #e2e5ed50;
+}
+
+div#floatArticleMenu button.btn:hover {
+    background-color: #e2e5ed;
+}
+
+.ellipsis {
+    max-width: 150px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.line {
+    border: 2px solid #D2D2D2;
+    position: absolute;
+    width: 1px;
+    cursor: pointer;
+    /*z-index: 100;*/
+}
+
+.line-in {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, 0);
+    font-size: 0.75rem;
+    white-space: nowrap;
+    display: none;
+}
+
+.line-in p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-header {
+    padding: var(--bs-card-cap-padding-y) 8px var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x) !important;
+}
+
+.pk-fk {
+    margin-top: 6px;
+    font-size: 0.65rem;
+    color: #C2C2C2;
+}
+
+#icoPlusHeader {
+    cursor: pointer;
+}
+
+#tblHeaders i.bi-trash {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#divRaw,
+#divBinary {
+    padding: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #FFF;
+}
+
+#restTop div.table-responsive {
+    height: 200px;
+}
+
+#restTop #responsiveHeaders {
+    height: 250px;
+}
+
+#divResult {
+    padding: 10px;
+    width: 100%;
+    height: calc(100vh - 373px);
+    background-color: #FFF;
+    font-size: 0.85rem;
+    border-bottom: 1px solid red;
+}
+
+.middle {
+    display: flex !important;
+    align-self: center;
+}
+
+.btn-border {
+    border: 1px solid #e2e5ed;
+}

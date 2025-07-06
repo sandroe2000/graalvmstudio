@@ -1,0 +1,45 @@
+#gridDB {
+    /*display: grid;
+    gap: 8px;
+    grid-template-rows: calc(100vh - 165px);
+    grid-template-columns: 1fr 350px;
+    grid-template-areas: "mainDB asideDB";*/
+    width: 100%;
+    height: calc(100vh - 162px);
+    overflow: hidden;
+    padding: 0px 8px;
+}
+
+#mainDB {
+    /*grid-area: mainDB;*/
+    border-radius: var(--deep-border-radius);
+    border: var(--deep-border);
+    height: calc(100vh - 162px);
+    overflow-y: auto;
+}
+
+#asideDB {
+    /*grid-area: asideDB;*/
+    position: relative;
+    height: calc(100vh - 162px);
+    border-radius: var(--deep-border-radius);
+    border: var(--deep-border);
+    background-color: #21222C;
+    overflow-x: auto;
+}
+
+#panelSerachDB {
+    position: relative;
+    padding: 5px;
+    min-width: 200px;
+}
+
+#listDB {
+    padding: 6px;
+    color: #FFF;
+}
+
+td.editor-edit i,
+td.editor-delete i {
+    cursor: pointer;
+}

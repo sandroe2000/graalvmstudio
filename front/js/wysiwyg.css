@@ -1,0 +1,89 @@
+.hide {
+    display: none;
+}
+div.tool-bar {
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    width: 60px;
+    height: 530px;
+    resize: both;
+    overflow: auto;
+    z-index: 9999998;
+    border: 1px solid var(--deep-border-color-1);
+}
+div.tool-bar.card div.card-header {
+    cursor: move;
+    padding: 0.25rem 0.50rem !important;
+    background-color: var(--deep-bg-color);
+    border-bottom: 1px solid var(--deep-border-color-1) !important;
+}
+div.tool-bar.card div.card-body {
+    padding: 4px 0px !important;
+    background-color: var(--deep-bg-color);
+    text-align: center;
+}
+#propertiesMenu{
+    position: absolute;
+    top: 62px;
+    left: 230px;
+    width: 450px;
+    height: 280px;
+    resize: both;
+    overflow: auto;
+    z-index: 9999999;
+    border: 1px solid var(--deep-border-color-1);
+}
+div#propertiesMenu.card div.card-header {
+    cursor: move;
+    padding: 0.25rem 0.50rem !important;
+    background-color: var(--deep-bg-color);
+    border-bottom: 1px solid transparent !important;
+}
+div#propertiesMenu.card div.card-body {
+    padding: 4px 10px !important;
+    background-color: var(--deep-bg-color);
+    overflow-x: hidden;
+}
+.dragula-panel {
+    width: 100%;
+    height: calc(100vh - 165px);
+    margin: 5px;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-bottom: 60px;
+}
+div.tool-bar.card .btn-light {
+    --bs-btn-border-color: var(--deep-border-color-1) !important;
+}
+div.dragula-panel div.row {
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+div.dragula-panel div[class*="container"],
+div.dragula-panel div.row,
+div.dragula-panel div[class*="col-"] {
+    position: relative;
+    min-height: 40px;
+    border: 1px dashed var(--deep-border-color-1);
+    padding: 8px;
+}
+div.dragula-panel span[class*="badge"] {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    opacity: 0.3;
+}
+.on-active {
+    border: 1px dashed orange !important;
+    background-color: var(--bs-body-bg);
+}
+[contenteditable="true"]:focus {
+    outline: none;
+}
+
+.row {
+    color: var(--deep-color-1);
+}
