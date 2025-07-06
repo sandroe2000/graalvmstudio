@@ -1,6 +1,6 @@
 package br.com.sdvs.base.actuator;
 
-import br.com.sdvs.base.infra.HikariPoll;
+import br.com.sdvs.base.infra.HikariPool;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
@@ -37,7 +37,7 @@ public class HealthResource {
 
     private void checkDatabase(Map<String, Object> health) {
         Map<String, String> dbHealth = new LinkedHashMap<>();
-        try (Connection conn = HikariPoll.getConnection()) {
+        try (Connection conn = HikariPool.getConnection()) {
             // O timeout de 1 segundo é para a conexão não ficar presa
             if (conn.isValid(1)) {
                 dbHealth.put("status", "UP");

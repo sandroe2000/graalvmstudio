@@ -8,7 +8,7 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class HikariPoll {
+public class HikariPool {
 
     private static final HikariDataSource dataSource;
     private static final HikariDataSource dataSourceStudio;
@@ -61,7 +61,7 @@ public class HikariPoll {
 
     }
 
-    private HikariPoll() {}
+    private HikariPool() {}
 
     public static DataSource getDataSource() {
         return dataSource;

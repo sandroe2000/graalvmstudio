@@ -2,7 +2,7 @@ package br.com.sdvs.base.dao;
 
 import org.graalvm.polyglot.Value;
 
-import br.com.sdvs.base.infra.HikariPoll;
+import br.com.sdvs.base.infra.HikariPool;
 import br.com.sdvs.base.model.JSScript;
 import br.com.sdvs.base.model.JSScriptSummary;
 import br.com.sdvs.base.model.StTables;
@@ -41,7 +41,7 @@ public class JSScriptDAO {
 
         Object typesArr = null;
         Value typesVal = null; 
-        try (Connection conn = isAppConn ? HikariPoll.getConnection() : HikariPoll.getConnectionStudio();
+        try (Connection conn = isAppConn ? HikariPool.getConnection() : HikariPool.getConnectionStudio();
             PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             if(!wrGet.isEmpty()){
@@ -118,7 +118,7 @@ public class JSScriptDAO {
         List<Map<String, Object>> result = new ArrayList<>();
         Long generatedId = null;
 
-        try (Connection conn = isAppConn ? HikariPoll.getConnection() : HikariPoll.getConnectionStudio();
+        try (Connection conn = isAppConn ? HikariPool.getConnection() : HikariPool.getConnectionStudio();
             PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             Object valuesArr = rsSet.get("values");
@@ -170,7 +170,7 @@ public class JSScriptDAO {
        
         List<Map<String, Object>> result = new ArrayList<>();
 
-        try (Connection conn = isAppConn ? HikariPoll.getConnection() : HikariPoll.getConnectionStudio();
+        try (Connection conn = isAppConn ? HikariPool.getConnection() : HikariPool.getConnectionStudio();
             PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             Object valuesArr = wrSet.get("values");
@@ -221,7 +221,7 @@ public class JSScriptDAO {
         // Note que não selecionamos a coluna "code" para performance
         String sql = "SELECT id, location, name, path, type_file, language, init_function_name FROM js_scripts ORDER BY name";
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
              PreparedStatement stmt = conn.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()) {
 
@@ -252,7 +252,7 @@ public class JSScriptDAO {
         String sql  = "SELECT t.id AS table_id, t.tables_name AS table_name, q.id AS query_id, q.query_name AS query_name, ";
                sql += "q.query AS query_text FROM st_tables t LEFT JOIN st_tables_queries q ON t.id = q.tables_id ORDER BY t.tables_name, q.id";
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
              PreparedStatement stmt = conn.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()) {
 
@@ -290,7 +290,7 @@ public class JSScriptDAO {
         JSScript script = null;
         String sql = "SELECT * FROM js_scripts WHERE path = ?";
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
             PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, path);    
 
@@ -322,7 +322,7 @@ public class JSScriptDAO {
         List<JSScript> scripts = new ArrayList<>();
         String sql = "SELECT * FROM js_scripts WHERE lower(path) LIKE ?";
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
             PreparedStatement stmt = conn.prepareStatement(sql)) {
             String likePath = path.substring(0, path.indexOf(".")).concat(".%");// Usando LIKE para permitir variações 
             stmt.setString(1, likePath.toLowerCase());    
@@ -357,7 +357,7 @@ public class JSScriptDAO {
         String sql = "INSERT INTO js_scripts (location, name, path, type_file, language, init_function_name, code) " +
                      "VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id";
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setString(1, script.location());
@@ -388,7 +388,7 @@ public class JSScriptDAO {
         String sql = "UPDATE js_scripts set location = ?, name = ?, path = ?, type_file = ?, language = ?, init_function_name = ?, code = ? " +
                      "WHERE id = ? RETURNING id";
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setString(1, script.location());
@@ -417,7 +417,7 @@ public class JSScriptDAO {
 
     public void saveTable(StTables stTables) {
         String sql = "INSERT INTO st_tables (tables_name, created_by, updated_by) VALUES (?, ?, ?) RETURNING id";
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, stTables.getTables_name());
             stmt.setLong(2, stTables.getCreated_by());
@@ -435,7 +435,7 @@ public class JSScriptDAO {
         String sql = "SELECT * FROM st_table_columns WHERE tables_id = ?";
         List<Map<String, Object>> columns = new ArrayList<>();
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setLong(1, id);
             try (ResultSet rs = stmt.executeQuery()) {
@@ -462,7 +462,7 @@ public class JSScriptDAO {
         String sql = "SELECT * FROM st_tables";
         List<Map<String, Object>> tables = new ArrayList<>();
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
              PreparedStatement stmt = conn.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()) {
 
@@ -485,7 +485,7 @@ public class JSScriptDAO {
         String sql  = "UPDATE st_table_columns SET columns_name = ?, data_type = ?, length = ?, default_value = ?, index_search = ?, ";
                sql += "is_required = ?, fk_table = ?, updated_by = ? WHERE id = ? AND tables_id = ?";
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             
             stmt.setString(1, (String) params.get("columns_name"));
@@ -510,7 +510,7 @@ public class JSScriptDAO {
         String sql  = "INSERT INTO st_table_columns (tables_id, columns_name, data_type, length, default_value, index_search, is_required, ";
                sql += "fk_table, created_by, updated_by) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id";
 
-        try (Connection conn = HikariPoll.getConnectionStudio();
+        try (Connection conn = HikariPool.getConnectionStudio();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setLong(1, (Long.parseLong(params.get("tables_id").toString())));

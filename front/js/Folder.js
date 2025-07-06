@@ -158,7 +158,7 @@ export class Folder {
                 sessionId: 'c3b8621b-eac9-4029-b9fa-4cd2ac77c1f8',
                 params: query
             });
-        }else if(file[0].typeFile=='HTML' && dragulaPanel){
+        }else if(file[0]?.typeFile=='HTML' && dragulaPanel){
             label = file[0].name;
             file[0].code = dragulaPanel.innerHTML;
             await this.app.service.update(file[0], id);

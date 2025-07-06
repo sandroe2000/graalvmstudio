@@ -1,6 +1,6 @@
 package br.com.sdvs.base.rest;
 
-import br.com.sdvs.base.infra.HikariPoll;
+import br.com.sdvs.base.infra.HikariPool;
 import br.com.sdvs.base.model.Product;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -28,7 +28,7 @@ public class ProductResource {
         logger.info("Recebida requisição para buscar todos os produtos.");
         List<Product> products = new ArrayList<>();
         String sql = "SELECT id, name, price FROM products";
-        try (Connection conn = HikariPoll.getConnection();
+        try (Connection conn = HikariPool.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
 
