@@ -1,4 +1,4 @@
-INSERT INTO public.js_scripts ("location",name,"path",type_file,"language",init_function_name,code) VALUES
+﻿INSERT INTO public.js_scripts ("location","name","path",type_file,"language",init_function_name,code) VALUES
 	 ('','Home','/crmp6/frontend/Home.js','JAVASCRIPT','js',NULL,'/*JAVASCRIPT | /crmp6/frontend/Home.js*/
 export class Home {
 
@@ -391,6 +391,51 @@ export class Consumers {
         }
     }
 }'),
+	 ('','databasecontroller','/studio/frontend/database/databasecontroller.css','CSS','css',NULL,'#gridDB {
+    /*display: grid;
+    gap: 8px;
+    grid-template-rows: calc(100vh - 165px);
+    grid-template-columns: 1fr 350px;
+    grid-template-areas: "mainDB asideDB";*/
+    width: 100%;
+    height: calc(100vh - 162px);
+    overflow: hidden;
+    padding: 0px 8px;
+}
+
+#mainDB {
+    /*grid-area: mainDB;*/
+    border-radius: var(--deep-border-radius);
+    border: var(--deep-border);
+    height: calc(100vh - 162px);
+    overflow-y: auto;
+}
+
+#asideDB {
+    /*grid-area: asideDB;*/
+    position: relative;
+    height: calc(100vh - 162px);
+    border-radius: var(--deep-border-radius);
+    border: var(--deep-border);
+    background-color: #21222C;
+    overflow-x: auto;
+}
+
+#panelSerachDB {
+    position: relative;
+    padding: 5px;
+    min-width: 200px;
+}
+
+#listDB {
+    padding: 6px;
+    color: #FFF;
+}
+
+td.editor-edit i,
+td.editor-delete i {
+    cursor: pointer;
+}'),
 	 ('','consumers','/crmp6/frontend/consumers.html','HTML','html',NULL,'<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
@@ -619,7 +664,8 @@ export class DBService {
 
         return this.dao.insertOrUpdate(sql, rsSet, false);
 	}
-}'),
+}');
+INSERT INTO public.js_scripts ("location","name","path",type_file,"language",init_function_name,code) VALUES
 	 ('','Studio','/studio/frontend/Studio.js','JAVASCRIPT','js',NULL,'import Split from ''http://localhost:3000/assets/split.js/dist/split.es.js'';
 
 export class Studio {
@@ -773,8 +819,7 @@ export class Studio {
             console.log(''SEARCH...'');
         });
     }
-}');
-INSERT INTO public.js_scripts ("location",name,"path",type_file,"language",init_function_name,code) VALUES
+}'),
 	 ('','Row','/studio/frontend/wysiwyg/properties/Row.js','JAVASCRIPT','js',NULL,'export class Row {
 
     constructor(app, element){
@@ -820,6 +865,97 @@ INSERT INTO public.js_scripts ("location",name,"path",type_file,"language",init_
         });
         document.querySelector(''#colClass'').addEventListener(''change'', (event) => {
             this.element.setAttribute(''class'', event.target.value);
+        });
+    }
+}'),
+	 ('','Search','/studio/frontend/Search.js','JAVASCRIPT','js',NULL,'export class Search{
+
+    constructor(app){
+        this.app = app
+    }
+
+    template(){
+        return `
+        <div class="row mx-2 g-1">
+            <div class="col">                    
+                    <input class="form-control form-control-sm" type="text" placeholder="Search">
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-sm btn-secondary" id="btnMainSearch">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="search-result"></div>`;
+    }
+
+    init(){
+        this.search = document.querySelector(''.search'')
+        this.searchInput = document.querySelector(''.search-input'')
+        this.searchButton = document.querySelector(''.search-button'')
+    }
+}'),
+	 ('','RestClient','/studio/frontend/RestClient.js','JAVASCRIPT','js',NULL,'export class RestClient {
+
+    constructor(app) {
+        this.app = app;
+    }
+
+    template() {
+        return `
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" style="color:#FFF">
+                    <h1 class="text-center">Rest Client</h1>
+                    <p class="text-center">This is a placeholder for the Rest Client interface.</p>
+                </div>
+            </div>
+        </div>`;
+    }
+
+    async init(){
+
+    }
+}'),
+	 ('','FormTables','/studio/frontend/database/FormTables.js','JAVASCRIPT','js',NULL,'export class FormTables {
+
+    constructor(app) {
+        this.app = app; 
+    }
+
+    template() {
+        return `
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" id="txtAddNewTable" class="form-control form-control-sm" placeholder="Table name...">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 text-center">
+                    <button id="btnAddNewTable" class="btn btn-sm btn-primary" style="width:30% !important">Save</button>
+                </div>
+            </div>
+        </div>`;
+    }
+
+    async init() {  
+        this.events();
+    }   
+
+    events() {
+        document.querySelector(''#btnAddNewTable'').addEventListener(''click'', async (event) => {
+            const tableName = document.querySelector(''#txtAddNewTable'').value;
+            //await this.app.service.addTable(tableName);
+            await this.app.service.executeByPath({
+                path:''/studio/backend/service/DBService.mjs'',
+                name:''DBService'',
+                execFunction: ''insertTable'',
+                sessionId: ''c3b8621b-eac9-4029-b9fa-4cd2ac77c1f8'',
+                params: { "name": tableName }
+            });
+            this.app.modal.close();
+            this.app.notyf.success(''Your changes have been successfully saved!'');
         });
     }
 }'),
@@ -890,17 +1026,17 @@ export class StudioController {
                 if (nodeData.type === ''folder'') {
                     iconSpan.innerHTML = ''<i class="bi bi-folder-fill me-2" style="color:#FFD679"></i>'';
                 } else if (nodeData.extension === ''js'') {
-                    iconSpan.innerHTML = ''<i class="bi bi-javascript me-2" style="color:yellow"></i>'';
+                    iconSpan.innerHTML = ''<i class="bi bi-javascript ms-2 me-2" style="color:yellow"></i>'';
                 } else if (nodeData.extension === ''css'') {
-                    iconSpan.innerHTML = ''<i class="bi bi-hash me-2"></i>'';
+                    iconSpan.innerHTML = ''<i class="bi bi-hash ms-2 me-2"></i>'';
                 } else if (nodeData.extension === ''html'') {
-                    iconSpan.innerHTML = ''<i class="bi bi-code-slash me-2"></i>'';
+                    iconSpan.innerHTML = ''<i class="bi bi-code-slash ms-2 me-2"></i>'';
                 } else if (nodeData.extension === ''file'') {
-                    iconSpan.innerHTML = ''<i class="bi bi-file-earmark-text me-2"></i>'';
+                    iconSpan.innerHTML = ''<i class="bi bi-file-earmark-text ms-2 me-2"></i>'';
                 } else if (nodeData.extension === ''image'') {
-                    iconSpan.innerHTML = ''<i class="bi bi-file-earmark-image me-2"></i>'';
+                    iconSpan.innerHTML = ''<i class="bi bi-file-earmark-image ms-2 me-2"></i>'';
                 } else {
-                    iconSpan.innerHTML = ''▪<i class="bi bi-file-earmark-x me-2"></i>'';
+                    iconSpan.innerHTML = ''▪<i class="bi bi-file-earmark-x ms-2 me-2"></i>'';
                 }
                 nodeContentWrapperElement.appendChild(iconSpan);
 
@@ -1372,97 +1508,6 @@ export class StudioController {
                     size: ''modal-xl''
                 }
             });
-        });
-    }
-}'),
-	 ('','Search','/studio/frontend/Search.js','JAVASCRIPT','js',NULL,'export class Search{
-
-    constructor(app){
-        this.app = app
-    }
-
-    template(){
-        return `
-        <div class="row mx-2 g-1">
-            <div class="col">                    
-                    <input class="form-control form-control-sm" type="text" placeholder="Search">
-            </div>
-            <div class="col-auto">
-                <button type="button" class="btn btn-sm btn-secondary" id="btnMainSearch">
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
-        </div>
-        <div class="search-result"></div>`;
-    }
-
-    init(){
-        this.search = document.querySelector(''.search'')
-        this.searchInput = document.querySelector(''.search-input'')
-        this.searchButton = document.querySelector(''.search-button'')
-    }
-}'),
-	 ('','RestClient','/studio/frontend/RestClient.js','JAVASCRIPT','js',NULL,'export class RestClient {
-
-    constructor(app) {
-        this.app = app;
-    }
-
-    template() {
-        return `
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12" style="color:#FFF">
-                    <h1 class="text-center">Rest Client</h1>
-                    <p class="text-center">This is a placeholder for the Rest Client interface.</p>
-                </div>
-            </div>
-        </div>`;
-    }
-
-    async init(){
-
-    }
-}'),
-	 ('','FormTables','/studio/frontend/database/FormTables.js','JAVASCRIPT','js',NULL,'export class FormTables {
-
-    constructor(app) {
-        this.app = app; 
-    }
-
-    template() {
-        return `
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <input type="text" id="txtAddNewTable" class="form-control form-control-sm" placeholder="Table name...">
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-12 text-center">
-                    <button id="btnAddNewTable" class="btn btn-sm btn-primary" style="width:30% !important">Save</button>
-                </div>
-            </div>
-        </div>`;
-    }
-
-    async init() {  
-        this.events();
-    }   
-
-    events() {
-        document.querySelector(''#btnAddNewTable'').addEventListener(''click'', async (event) => {
-            const tableName = document.querySelector(''#txtAddNewTable'').value;
-            //await this.app.service.addTable(tableName);
-            await this.app.service.executeByPath({
-                path:''/studio/backend/service/DBService.mjs'',
-                name:''DBService'',
-                execFunction: ''insertTable'',
-                sessionId: ''c3b8621b-eac9-4029-b9fa-4cd2ac77c1f8'',
-                params: { "name": tableName }
-            });
-            this.app.modal.close();
-            this.app.notyf.success(''Your changes have been successfully saved!'');
         });
     }
 }'),
@@ -2360,7 +2405,8 @@ export class DatabaseController {
             this.app.notyf.success(''Your changes have been successfully saved!'');
         });
     }
-}'),
+}');
+INSERT INTO public.js_scripts ("location","name","path",type_file,"language",init_function_name,code) VALUES
 	 ('','wysiwyg','/studio/frontend/wysiwyg/wysiwyg.css','CSS','css',NULL,'.hide {
     display: none;
 }
@@ -2449,8 +2495,7 @@ div.dragula-panel span[class*="badge"] {
 
 .row {
     color: var(--deep-color-1);
-}');
-INSERT INTO public.js_scripts ("location",name,"path",type_file,"language",init_function_name,code) VALUES
+}'),
 	 ('','Col','/studio/frontend/wysiwyg/properties/Col.js','JAVASCRIPT','js',NULL,'export class Col {
 
     constructor(app, element){
@@ -2782,7 +2827,7 @@ INSERT INTO public.js_scripts ("location",name,"path",type_file,"language",init_
     display: flex;
     flex-direction: column;
 }
-.deep-aside button {
+.deep-aside button { 
     margin-left: 5px;
     margin-bottom: 5px;
 }
@@ -3021,7 +3066,7 @@ INSERT INTO public.js_scripts ("location",name,"path",type_file,"language",init_
 }
 
 .custom-treeview-wrapper > ul {
-    padding-left: 0px;
+    padding-left: 30px;
 }
 .custom-treeview-wrapper .treeview-node-content {
     padding: 0; 
@@ -3077,51 +3122,6 @@ div.dt-container .dt-paging {
     --bs-btn-active-border-color: #5a23c7;
 }
 '),
-	 ('','databasecontroller','/studio/frontend/database/databasecontroller.css','CSS','css',NULL,'#gridDB {
-    /*display: grid;
-    gap: 8px;
-    grid-template-rows: calc(100vh - 165px);
-    grid-template-columns: 1fr 350px;
-    grid-template-areas: "mainDB asideDB";*/
-    width: 100%;
-    height: calc(100vh - 162px);
-    overflow: hidden;
-    padding: 0px 8px;
-}
-
-#mainDB {
-    /*grid-area: mainDB;*/
-    border-radius: var(--deep-border-radius);
-    border: var(--deep-border);
-    height: calc(100vh - 162px);
-    overflow-y: auto;
-}
-
-#asideDB {
-    /*grid-area: asideDB;*/
-    position: relative;
-    height: calc(100vh - 162px);
-    border-radius: var(--deep-border-radius);
-    border: var(--deep-border);
-    background-color: #21222C;
-    overflow-x: auto;
-}
-
-#panelSerachDB {
-    position: relative;
-    padding: 5px;
-    min-width: 200px;
-}
-
-#listDB {
-    padding: 6px;
-    color: #FFF;
-}
-
-td.editor-edit i,
-td.editor-delete i {
-    cursor: pointer;
-}'),
 	 ('','QueryEditor','/studio/frontend/database/QueryEditor.js','JAVASCRIPT','js',NULL,'import Split from ''http://localhost:3000/assets/split.js/dist/split.es.js'';
 
 export class QueryEditor {
@@ -3437,13 +3437,13 @@ export class Gemini {
                 }
 
                 getProfileInfo() {
-                    return \`Nome: \${this.name}, Email: \${this.email}\`;
+                    return \\`Nome: \\${this.name}, Email: \\${this.email}\\`;
                 }
             }
 
             // --- FILE: api-client.js ---
             async function performApiCall(endpoint, data) {
-                console.log(\`Chamando \${endpoint} com os dados:\`, data);
+                console.log(\\`Chamando \\${endpoint} com os dados:\\`, data);
                 // simula uma chamada de API
                 return { success: true, data: { id: 123 } };
             }`;
@@ -3455,7 +3455,7 @@ export class Gemini {
                     ''// Tente instanciar a classe User ou usar a função performApiCall'',
                     '''',
                     ''const newUser = new '' // Tente acionar o autocomplete aqui
-                ].join(''\n''),
+                ].join(''\\n''),
                 language: ''javascript'',
                 theme: ''vs-dark'',
                 automaticLayout: true,
@@ -3463,7 +3463,7 @@ export class Gemini {
             });
 
             monaco.languages.registerCompletionItemProvider(''javascript'', {
-                triggerCharacters: [''.'', ''('', '' '', ''\n''],
+                triggerCharacters: [''.'', ''('', '' '', ''\\n''],
                 provideCompletionItems: async (model, position) => {
                     const apiKey = document.getElementById(''apiKeyInput'').value;
                     if (!apiKey) return { suggestions: [] };
@@ -3510,7 +3510,7 @@ export class Gemini {
                         if (!generatedText) return { suggestions: [] };
 
                         const suggestion = {
-                            label: { label: generatedText.split(''\n'')[0], description: ''Sugestão com Contexto (Gemini)'' },
+                            label: { label: generatedText.split(''\\n'')[0], description: ''Sugestão com Contexto (Gemini)'' },
                             kind: monaco.languages.CompletionItemKind.Snippet,
                             insertText: generatedText,
                             insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,

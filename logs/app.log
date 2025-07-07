@@ -1,0 +1,45 @@
+2025-07-06 23:28:05.119 [INFO ] [main] org.eclipse.jetty.server.Server - jetty-11.0.25; built: 2025-03-13T00:15:57.301Z; git: a2e9fae3ad8320f2a713d4fa29bba356a99d1295; jvm 24.0.1+9-jvmci-b01
+2025-07-06 23:28:05.206 [INFO ] [main] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-07-06 23:28:05.549 [INFO ] [main] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@42deb43a{/,null,AVAILABLE}
+2025-07-06 23:28:05.651 [INFO ] [main] o.e.jetty.server.AbstractConnector - Started ServerConnector@62150f9e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-07-06 23:28:05.716 [INFO ] [main] org.eclipse.jetty.server.Server - Started Server@4944252c{STARTING}[11.0.25,sto=0] @1254ms
+2025-07-06 23:28:27.915 [INFO ] [qtp521081105-64] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 23:28:28.251 [INFO ] [qtp521081105-42] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:28:28.311 [INFO ] [qtp521081105-62] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 23:28:34.891 [INFO ] [qtp521081105-64] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/backend/service/DBService.mjs
+2025-07-06 23:30:25.335 [INFO ] [qtp521081105-62] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/studio.css
+2025-07-06 23:30:53.577 [INFO ] [qtp521081105-72] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: studio
+2025-07-06 23:30:56.505 [INFO ] [qtp521081105-42] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 23:30:56.529 [INFO ] [qtp521081105-72] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:30:56.547 [INFO ] [qtp521081105-42] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 23:31:35.749 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/studio.css
+2025-07-06 23:32:06.020 [INFO ] [qtp521081105-43] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: studio
+2025-07-06 23:32:11.924 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 23:32:11.942 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:32:11.960 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 23:32:23.307 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/studio.css
+2025-07-06 23:32:35.456 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: studio
+2025-07-06 23:32:37.625 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 23:32:37.642 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:32:37.657 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 23:32:43.294 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/studio.css
+2025-07-06 23:33:01.546 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: studio
+2025-07-06 23:33:05.806 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Search.js
+2025-07-06 23:33:06.089 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 23:33:06.108 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:33:06.126 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 23:33:11.408 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/studio.css
+2025-07-06 23:33:28.407 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: studio
+2025-07-06 23:33:30.271 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 23:33:30.288 [INFO ] [qtp521081105-40] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:33:30.303 [INFO ] [qtp521081105-73] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 23:34:07.336 [INFO ] [qtp521081105-44] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:34:48.792 [INFO ] [qtp521081105-74] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: StudioController
+2025-07-06 23:34:52.550 [INFO ] [qtp521081105-43] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 23:34:52.572 [INFO ] [qtp521081105-74] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:34:52.586 [INFO ] [qtp521081105-43] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
+2025-07-06 23:35:01.496 [INFO ] [qtp521081105-74] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:35:09.705 [INFO ] [qtp521081105-43] b.c.sdvs.base.rest.JSScriptResource - Recebida requisição para atualizar um script: StudioController
+2025-07-06 23:35:11.633 [INFO ] [qtp521081105-74] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/Studio.js
+2025-07-06 23:35:11.650 [INFO ] [qtp521081105-43] b.c.sdvs.base.rest.JSScriptResource - Buscando script com path: /studio/frontend/StudioController.js
+2025-07-06 23:35:11.664 [INFO ] [qtp521081105-74] b.c.sdvs.base.rest.JSScriptResource - Construindo a árvore de arquivos.
