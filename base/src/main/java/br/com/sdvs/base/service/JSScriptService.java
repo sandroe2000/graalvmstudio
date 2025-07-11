@@ -1,7 +1,7 @@
 package br.com.sdvs.base.service;
 
 import br.com.sdvs.base.dao.JSScriptDAO;
-import br.com.sdvs.base.dao.TableWithQueryDTO;
+import br.com.sdvs.base.dto.TableWithQueryDTO;
 import br.com.sdvs.base.dto.JSScriptDTO;
 import br.com.sdvs.base.model.DBTreeNode;
 import br.com.sdvs.base.model.JSScript;

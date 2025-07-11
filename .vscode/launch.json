@@ -1,0 +1,54 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "GatewayApplication",
+            "request": "launch",
+            "mainClass": "br.com.sdvs.gateway.GatewayApplication",
+            "projectName": "br.com.sdvs-gateway"
+        },
+        {
+            "type": "java",
+            "name": "EurekaApplication",
+            "request": "launch",
+            "mainClass": "br.com.sdvs.eureka.EurekaApplication",
+            "projectName": "br.com.sdvs-eureka"
+        },
+        {
+            "type": "java",
+            "name": "BaseApplication",
+            "request": "launch",
+            "mainClass": "br.com.sdvs.base.BaseApplication"
+        },
+        {
+            "type": "java",
+            "name": "AppApplication",
+            "request": "launch",
+            "mainClass": "br.com.sdvs.base.AppApplication"
+        },
+        {
+            "type": "java",
+            "name": "GatewayApplication",
+            "request": "launch",
+            "mainClass": "br.com.sdvs.gateway.GatewayApplication",
+            "projectName": "gateway"
+        },
+        {
+            "type": "java",
+            "name": "EurekaApplication",
+            "request": "launch",
+            "mainClass": "br.com.sdvs.eureka.EurekaApplication",
+            "projectName": "eureka"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AppApplication<base>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.sdvs.base.AppApplication",
+            "projectName": "base",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

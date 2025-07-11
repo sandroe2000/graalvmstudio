@@ -2,7 +2,7 @@ package br.com.sdvs.base.infra;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import io.micrometer.core.instrument.MeterRegistry;
+//import io.micrometer.core.instrument.MeterRegistry;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -48,13 +48,10 @@ public class HikariPool {
         configStusio.addDataSourceProperty("cachePrepStmts", "true");
         configStusio.addDataSourceProperty("prepStmtCacheSize", "250");
         configStusio.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
-        configStusio.setMinimumIdle(5);
-        configStusio.setMaximumPoolSize(5);
 
-        MeterRegistry meterRegistry = MetricsRegistry.getRegistry();
-
-        config.setMetricRegistry(meterRegistry);
-        configStusio.setMetricRegistry(meterRegistry);
+        //MeterRegistry meterRegistry = MetricsRegistry.getRegistry();
+        //config.setMetricRegistry(meterRegistry);
+        //configStusio.setMetricRegistry(meterRegistry);
 
         dataSource = new HikariDataSource(config);
         dataSourceStudio = new HikariDataSource(configStusio);

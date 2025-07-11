@@ -27,11 +27,15 @@ public class JSEngine {
     @SuppressWarnings("unchecked")
     public Map<String, Object> executeByPath(JSParms params) {
 
+        
         Map<String, Object> finalResultMap = new HashMap<>();
+        
+        if(params.getPath() == null) return finalResultMap;
 
         try (Context context = buildContext(params)) {
             
-            Source source = Source.newBuilder("js", params.getCode(), params.getPath())
+            Source source = Source
+                .newBuilder("js", params.getCode(), params.getPath())
                 .mimeType("application/javascript+module")
                 .build();
             

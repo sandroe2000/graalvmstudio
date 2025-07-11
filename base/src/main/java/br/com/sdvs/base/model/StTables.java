@@ -1,13 +1,15 @@
 package br.com.sdvs.base.model;
 
+import java.time.LocalDateTime;
+
 public class StTables {
     
     private Long id;
     private String tables_name;
     private Long created_by;
     private Long updated_by;
-    private localDateTime created_at;
-    private localDateTime updated_at;
+    private LocalDateTime created_at;
+    private LocalDateTime updated_at;
     
     public StTables() {}
 
@@ -23,9 +25,9 @@ public class StTables {
     public Long getUpdated_by() {return updated_by;}
     public void setUpdated_by(Long updated_by) {this.updated_by = updated_by;}
 
-    public localDateTime getCreated_at() {return created_at;}
-    public void setCreated_at(localDateTime created_at) {this.created_at = created_at;}
+    public LocalDateTime getCreated_at() {return created_at;}
+    public void setCreated_at(LocalDateTime created_at) {this.created_at = created_at;}
     
-    public localDateTime getUpdated_at() {return updated_at;}
-    public void setUpdated_at(localDateTime updated_at) {this.updated_at = updated_at;}
+    public LocalDateTime getUpdated_at() {return updated_at;}
+    public void setUpdated_at(LocalDateTime updated_at) {this.updated_at = updated_at;}
 }

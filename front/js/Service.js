@@ -1,7 +1,7 @@
 export class Service {
 
     constructor() {
-        this.baseUrl = 'http://localhost:8080/api/jsscripts';
+        this.baseUrl = 'http://localhost:8080/api-base';//'http://localhost:8080/api/jsscripts';
     }
 
     async buildFileTree() {
@@ -43,12 +43,12 @@ export class Service {
     }
 
     async findByPath(path) {
-        const response = await fetch(`${this.baseUrl}/findByPath/?path=${path}`);
+        const response = await fetch(`${this.baseUrl}/findByPath?path=${path}`);
         return await response.json();
     }
 
     async findByPathContains(path) {
-        const response = await fetch(`${this.baseUrl}/findByPathContains/?path=${path}`);
+        const response = await fetch(`${this.baseUrl}/findByPathContains?path=${path}`);
         return await response.json();
     }
 

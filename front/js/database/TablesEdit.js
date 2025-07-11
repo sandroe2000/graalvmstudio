@@ -117,7 +117,13 @@ export class TablesEdit {
 
         // Initialize DataTable with the columns
         that.table = new DataTable('#st_columns_datatable', {
-            lengthMenu: [5, 10, 25, 50, -1],
+            layout:{
+                topStart: null,
+                topEnd: null,
+                bottomStart: 'info',
+                bottomEnd: 'paging'
+            },
+            iDisplayLength: 50,
             data: dataSet,
             columns: [
                 { title: "Id",visible: false, searchable: false },

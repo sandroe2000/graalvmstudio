@@ -42,7 +42,7 @@ export class Database {
         this.treeViewaFiles = new Treeview({
             containerId: 'treeViewDB',
             data: this.tables,
-            searchEnabled: true,
+            searchEnabled: false,
             initiallyExpanded: true, 
             multiSelectEnabled: false,
             onSelectionChange: (selectedNodesData) => {

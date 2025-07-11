@@ -2,6 +2,7 @@ package br.com.sdvs.base.dao;
 
 import org.graalvm.polyglot.Value;
 
+import br.com.sdvs.base.dto.TableWithQueryDTO;
 import br.com.sdvs.base.infra.HikariPool;
 import br.com.sdvs.base.model.JSScript;
 import br.com.sdvs.base.model.JSScriptSummary;

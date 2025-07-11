@@ -40,14 +40,22 @@ export class Folder {
 
     async loadFiles(){
 
-        this.files = await this.app.service.buildFileTree();
+        //this.files = await this.app.service.buildFileTree();
+        let result = await this.app.service.executeByPath({
+            path:'/studio/backend/service/DBService.mjs',
+            name:'DBService',
+            execFunction: 'buildFileTree',
+            sessionId: 'c3b8621b-eac9-4029-b9fa-4cd2ac77c1f8',
+            params: {}
+        });
+        this.files = result.resultList;
 
         if(!this.files || this.files.length == 0) return false;
 
         this.treeViewaFiles = new Treeview({
             containerId: 'treeViewFolder',
             data: this.files,
-            searchEnabled: true,
+            searchEnabled: false,
             initiallyExpanded: true, 
             multiSelectEnabled: false,
             onSelectionChange: (selectedNodesData) => {
